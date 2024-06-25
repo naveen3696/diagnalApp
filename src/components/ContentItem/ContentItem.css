@@ -1,0 +1,28 @@
+/* ContentItem.css */
+.content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.content-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  margin: 10px 0;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  overflow: hidden; /* Prevent overflow from disturbing layout */
+  max-width: 100%; /* Ensure it fits within the parent container */
+}
