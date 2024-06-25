@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import ContentItem from '../ContentItem/ContentItem';
 import "./ContentGrid.css"
+import { BarLoader } from 'react-spinners'; 
+
 
 const ContentGrid = ({ searchTerm }) => {
   const [items, setItems] = useState([]);
@@ -55,8 +57,8 @@ const ContentGrid = ({ searchTerm }) => {
       {filteredItems.map((item, index) => (
         <ContentItem key={index} item={item} />
       ))}
-      {loading && <p>Loading...</p>}
-    </div>
+      {loading && <BarLoader color="#36D7B7" loading={true} css="margin: auto;" />}
+      </div>
   );
 }
 
