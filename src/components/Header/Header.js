@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Header.css'; 
+import React, { useState } from "react";
+import "./Header.css";
 
 const Header = ({ setSearchTerm }) => {
   const [searchActive, setSearchActive] = useState(false);
@@ -10,7 +10,7 @@ const Header = ({ setSearchTerm }) => {
 
   const handleBackClick = () => {
     setSearchActive(false);
-    setSearchTerm('');
+    setSearchTerm("");
   };
 
   return (
@@ -26,9 +26,7 @@ const Header = ({ setSearchTerm }) => {
         )}
       </div>
       <div className="center-section">
-        {!searchActive && (
-          <h1 className="header-title">Romantic Comedy</h1>
-        )}
+        {!searchActive && <h1 className="header-title">Romantic Comedy</h1>}
       </div>
       <div className="right-section">
         {searchActive ? (
@@ -49,6 +47,6 @@ const Header = ({ setSearchTerm }) => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

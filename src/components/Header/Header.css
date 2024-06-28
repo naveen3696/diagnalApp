@@ -1,50 +1,54 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-image: url('https://test.create.diagnal.com/images/nav_bar.png');
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 97vw;
-    z-index: 1000;
-    height: 50px; /* Adjust height if necessary */
-  }
-  .left-section, .right-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .center-section {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .header-title {
-    margin: 0;
-    font-size: 18px;
-    color: #FFFFFF;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  
-  .search-input {
-    width: 200px;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #3B3B3B;
-    color: #FFFFFF;
-  }
-  
-  body {
-    margin-top: 60px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-image: url('https://test.create.diagnal.com/images/nav_bar.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1200px; /* Maximum width to prevent overflow */
+  margin: 0 auto; /* Center align */
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 50px; /* Adjust height if necessary */
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.center-section {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #3B3B3B;
+  color: #FFFFFF;
+}
+
+body {
+  padding-top: 60px;
+}
+
